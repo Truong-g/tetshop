@@ -1,0 +1,13 @@
+.section {
+  margin-top: 5rem;
+}
+.section__header {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.section__content {
+  margin-top: 4rem;
+}
+
+/*# sourceMappingURL=section.css.map */

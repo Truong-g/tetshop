@@ -1,0 +1,39 @@
+@use '../abstracts/' as *;
+
+
+.hero-slider{
+    .swiper-slide{
+        @include flex(center, center);
+        .content{
+            @include flex(center, flex-start);
+            width: 100%;
+            max-width: 1280px;
+            height: 500px;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: $border-radius;
+
+            @include mobile{
+                border-radius: 0;
+            }
+
+            .text{
+                padding-left: 7rem;
+                line-height: 1;
+                @include mobile{
+                    padding-left: 1rem;
+                }
+
+                .discount{
+                    font-size: 6rem;
+                    margin-bottom: 2rem;
+
+                    @include mobile{
+
+                    }
+                }
+            }
+        }
+    }
+}
